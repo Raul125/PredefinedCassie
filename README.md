@@ -1,2 +1,2 @@
 # PredefinedCassie
-Don't check the Commands folder
+Predefine Cassie Announcements and execute them imgame
