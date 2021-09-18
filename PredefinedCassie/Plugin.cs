@@ -7,7 +7,7 @@
     public class Plugin : Plugin<Config>
     {
         public static Plugin Singleton;
-        public override string Author { get; } = "Cegla";
+        public override string Author { get; } = "Cegla, Raul125";
         public override string Name { get; } = "PredefinedCassie";
         public override string Prefix { get; } = "PredefinedCassie";
         public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
