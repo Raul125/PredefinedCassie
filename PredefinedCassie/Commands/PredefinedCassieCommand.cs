@@ -2,6 +2,7 @@
 {
     using CommandSystem;
     using Exiled.API.Features;
+    using Exiled.Permissions.Extensions;
     using RemoteAdmin;
     using System;
 
@@ -17,6 +18,13 @@
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             Player player = Player.Get((sender as PlayerCommandSender).ReferenceHub);
+
+            if (!sender.CheckPermission("pc.cassie"))
+            {
+                response = "You don't have permission to do that. Missing permission: pc.cassie";
+                return false;
+            }
+            
 
             if (arguments.Count == 0)
             {
