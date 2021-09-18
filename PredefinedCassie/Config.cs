@@ -1,4 +1,4 @@
-namespace PredefinedCassie
+﻿namespace PredefinedCassie
 {
     using Exiled.API.Interfaces;
     using System.Collections.Generic;
@@ -13,8 +13,8 @@ namespace PredefinedCassie
 
         public Dictionary<string, string> PredefiniedCassies { get; set; } = new Dictionary<string, string>
         {
-            { "mtf", "yes" },
-            { "chaos", "no" }
+            { "example", "containment breach detected" },
+            { "example2", "bell_start containment breach detected bell_end" }
         };
     }
 }
