@@ -7,7 +7,7 @@
     public class Plugin : Plugin<Config>
     {
         public static Plugin Singleton;
-        public override PluginPriority Priority { get; } = PluginPriority.Medium;
+
         public override string Author { get; } = "Cegla";
         public override string Name { get; } = "PredefinedCassie";
         public override string Prefix { get; } = "PredefinedCassie";
@@ -27,11 +27,11 @@
             Singleton = null;
         }
 
-        public override void OnReloaded()
-        {
-            base.OnReloaded();
-            CheckConfig();
-        }
+
+
+
+
+
 
         public void CheckConfig()
         {
