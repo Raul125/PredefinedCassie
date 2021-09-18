@@ -7,12 +7,11 @@
     public class Plugin : Plugin<Config>
     {
         public static Plugin Singleton;
-        public override PluginPriority Priority { get; } = PluginPriority.Medium;
         public override string Author { get; } = "Cegla";
         public override string Name { get; } = "PredefinedCassie";
         public override string Prefix { get; } = "PredefinedCassie";
         public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
-        public override Version Version { get; } = new Version(1, 0, 2);
+        public override Version Version { get; } = new Version(1, 0, 3);
 
         public override void OnEnabled()
         {
@@ -25,12 +24,6 @@
         {
             base.OnDisabled();
             Singleton = null;
-        }
-
-        public override void OnReloaded()
-        {
-            base.OnReloaded();
-            CheckConfig();
         }
 
         public void CheckConfig()
