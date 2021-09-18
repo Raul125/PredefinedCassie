@@ -1,12 +1,11 @@
 # PredefinedCassie
-Predefine Cassie Announcements and execute them ingame
-All cassie words and guide:
-https://steamcommunity.com/sharedfiles/filedetails/?id=1577299753
+Predefine Cassie Announcements and execute them ingame<br/>
+All cassie words and guide: <br/>
+https://steamcommunity.com/sharedfiles/filedetails/?id=1577299753<br/>
 
-Config:
-  is_enabled: true
-  # If you set it to false, all predefined cassies will not have the starting and ending sound and noise between them
-  are_cassies_noisy: true
-  predefinied_cassies:
-    sometext: cassie announcement
-    anothertext: another cassie announcement
+Config:<br/>
+  is_enabled: true<br/>
+  are_cassies_noisy: true<br/>
+  predefinied_cassies:<br/>
+    sometext: cassie announcement<br/>
+    anothertext: another cassie announcement<br/>
