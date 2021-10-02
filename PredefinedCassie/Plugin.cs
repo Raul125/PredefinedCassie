@@ -14,15 +14,15 @@
 
         public override void OnEnabled()
         {
-            base.OnEnabled();
             Singleton = this;
             CheckConfig();
+            base.OnEnabled();
         }
 
         public override void OnDisabled()
         {
-            base.OnDisabled();
             Singleton = null;
+            base.OnDisabled();
         }
 
         public void CheckConfig()
